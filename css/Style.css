@@ -102,8 +102,7 @@ a {
 }
 
 #posts {
-    width: 660px;
-    float: left;
+    width: 0 auto;
 }
 
 .secao {
