@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portifolio-teste</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <h1><span class="white">Bem-vindo ao meu site!</span></h1>
+        </div>
+
+        <div id="menu">
+            <a href="#" onclick="mostrar('sobre')">Sobre mim</a>
+            <a href="#" onclick="mostrar('formacao')">Formação</a>
+            <a href="#" onclick="mostrar('portifolio')">Portifólio</a>
+            <a href="#" onclick="mostrar('contato')">Contato</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="posts">
+
+            <!-- SOBRE MIM -->
+            <div class="secao" id="sobre">
+                <h2>Sobre mim</h2>
+                <div class="conteudo-lado">
+                    <img src="imagens/SketDance.jpeg" alt="Sobre mim">
+                    <p>
+                        Meu nome é Kauê e atualmente estou cursando Análise e Desenvolvimento de Sistemas (ADS). Sou uma
+                        pessoa mais introvertida, o que significa que gosto de momentos tranquilos, onde posso me
+                        concentrar, aprender e refletir. Tenho muito interesse em informática graça as montagens de PC,
+                        gosto de explorar novas
+                        ferramentas, entender como os sistemas funcionam e sempre estou em busca de aprender mais sobre
+                        tecnologia..
+                    </p>
+                </div>
+            </div>
+            <div class="secao" id="sobre">
+                <h2>Hobbies</h2>
+                <p>Tenho diversos hobbies que fazem parte do meu dia a dia e me ajudam a relaxar e aproveitar melhor o
+                    tempo livre. Um dos principais é ler quadrinhos, pois gosto muito das histórias envolventes e das
+                    ilustrações criativas. Também gosto bastante de jogar, seja videogame ou jogos online, porque me
+                    divirto e desafio minha mente.</p>
+                <p>✅ Lista de hobbies:
+                    📚 Ler quadrinhos
+
+                    🎮 Jogar (videogames, online, etc.)
+
+                    🏋️‍♂️ Fazer exercícios
+
+                    🍳 Aprender a cozinhar
+
+                    🎬 Ir ao cinema
+
+                    ⚽ Acompanhar e praticar esportes</p>
+            </div>
+
+            <!-- FORMAÇÃO -->
+            <div class="secao" id="formacao">
+                <h2>Formação</h2>
+                <div class="conteudo-lado">
+                    <img class="img-post" src="imagens/fundo-curso-ads.jpg" />
+                    <p>
+                        estou cursando Análise e Desenvolvimento de Sistemas (ADS). Sempre tive interesse pela área de
+                        tecnologia e informática, e essa formação me permite aprender a criar sistemas, entender como
+                        funcionam os softwares e buscar soluções práticas para os desafios do mundo digital.
+
+                        Além da faculdade, também estou estudando inglês, pois reconheço a importância do idioma tanto
+                        para
+                        o mercado de trabalho quanto para o acesso a conteúdos técnicos e atualizados na área de
+                        tecnologia.
+                        Aprender inglês tem sido um desafio, mas também uma conquista pessoal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PORTIFÓLIO -->
+            <div class="secao" id="portifolio">
+                <h2>Portfólio</h2>
+
+                <div class="conteudo-lado">
+                    <img class="img-post" src="imagens/Dinossauro.png" alt="Projeto Jogo Scratch" />
+                    <div>
+                        <h3>Dinossauro: Pule a Árvore - Scratch</h3>
+                        <p>
+                            Jogo inspirado no famoso dinossauro do Google Chrome. Desenvolvido no Scratch, o objetivo é
+                            pular obstáculos (como árvores) para marcar pontos. O jogador controla o dinossauro com a
+                            tecla de espaço e precisa evitar colisões para continuar jogando.
+                        <p>Ferramenta:</p>
+                        <a href="https://scratch.mit.edu/projects/1183728313/" target="_blank"
+                            rel="noopener noreferrer">Veja o projeto no Scratch</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="conteudo-lado">
+                    <img class="img-post" src="imagens/sistema-cadastro.png" alt="Sistema de Cadastro" />
+                    <div>
+                        <h3>Sistema de Cadastro de Clientes</h3>
+                        <p>
+                            Sistema simples feito com HTML, CSS, JavaScript e PHP simulando o cadastro de clientes de
+                            uma empresa. Inclui validação de formulários e armazenamento em banco de dados MySQL.
+                            <a href="https://okawe.github.io/teste-cliente/">cadastraCliente</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="conteudo-lado">
+                    <img class="img-post" src="imagens/Site-tecnologia.png" alt="Landing Page" />
+                    <div>
+                        <h3>Landing Page - TecnoLógica</h3>
+                        <p>
+                            Página web responsiva com layout moderno, criada para apresentar conteúdo sobre tecnologia.
+                            Utiliza HTML5 e CSS3, com foco em design limpo e boa usabilidade.
+                            <a href="https://okawe.github.io/Tecno-Logia/">Site tecnologia</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTATO -->
+            <div class="secao" id="contato">
+                <h2>Contato</h2>
+                <form action="mailto:meuemail@exemplo.com" method="post" enctype="text/plain">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"
+                        required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+                <p>Entre em contato por e-mail ou redes sociais.</p>
+            </div>
+
+            <div id="footer">
+                Todos os direitos reservados - Kaue Pereria Davila
+            </div>
+        </div>
+
+        <script>
+            function mostrar(secaoId) {
+                const secoes = document.querySelectorAll('.secao');
+                secoes.forEach(secao => {
+                    secao.style.display = (secao.id === secaoId) ? 'block' : 'none';
+                });
+            }
+
+            window.onload = () => {
+                mostrar('sobre');
+            };
+        </script>
+</body>
+
+</html>
